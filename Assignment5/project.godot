@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="GP1 Assignment2"
+config/name="Assignment5"
 run/main_scene="res://Scenes/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
@@ -21,6 +21,7 @@ config/icon="res://icon.svg"
 2d_physics/layer_2="Walls"
 2d_physics/layer_3="GroundTiles"
 2d_physics/layer_4="FallingBoulders"
+2d_physics/layer_5="TopBoundry"
 
 [rendering]
 

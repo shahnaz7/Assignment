@@ -1,1 +1,10 @@
 res://Scenes/main_menu.tscn
+res://Scenes/boulder_dash.tscn
+res://Scenes/falling_rock.tscn
+res://Scenes/hard_tile.tscn
+res://Scenes/main_character.tscn
+res://Scripts/FallingRock.gd
+res://Scenes/GameOver.tscn
+res://Scenes/Camera2D.gd
+res://Scripts/top_boundry.gd
+res://Scenes/top_boundry.gd

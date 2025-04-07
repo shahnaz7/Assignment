@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://b6idknklacj8v"]
+[gd_scene load_steps=13 format=3 uid="uid://b6idknklacj8v"]
 
 [ext_resource type="Texture2D" uid="uid://beljn1w1haf1q" path="res://Assets/Tile_02.png" id="1_chi5k"]
 [ext_resource type="Texture2D" uid="uid://c2e8rg04pnrhi" path="res://Assets/Free-Mountain-Backgrounds-Pixel-Art9.png" id="2_fa256"]
@@ -8,7 +8,11 @@
 [ext_resource type="Script" path="res://Scenes/Camera2D.gd" id="4_n5s3k"]
 [ext_resource type="Texture2D" uid="uid://k7n7td2fclyg" path="res://Assets/Tile_14.png" id="5_qtvwi"]
 [ext_resource type="Script" path="res://Scenes/FloorSpawner.gd" id="7_qkw54"]
+[ext_resource type="Script" path="res://Scenes/top_boundry.gd" id="10_11sax"]
 [ext_resource type="Theme" uid="uid://d213qxnwhb3cj" path="res://Fonts/title_theme.tres" id="10_j6osf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3nvnc"]
+size = Vector2(795, 42)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p6a4y"]
 size = Vector2(32, 1996)
@@ -41,6 +45,15 @@ position = Vector2(400, -4)
 
 [node name="FloorSpawnerYPosition" type="Node2D" parent="Camera2D"]
 position = Vector2(-1, 321)
+
+[node name="TopBoundry" type="Area2D" parent="Camera2D"]
+position = Vector2(-12, -161)
+collision_layer = 16
+script = ExtResource("10_11sax")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/TopBoundry"]
+position = Vector2(12.5, -119)
+shape = SubResource("RectangleShape2D_3nvnc")
 
 [node name="Walls" type="Node2D" parent="."]
 position = Vector2(-572, -305)
@@ -136,4 +149,5 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 23
 text = "Avoid the falling rocks & survive the longest"
 
+[connection signal="body_entered" from="Camera2D/TopBoundry" to="Camera2D/TopBoundry" method="_on_body_entered"]
 [connection signal="timeout" from="RockSpawner/Timer" to="RockSpawner" method="_on_timer_timeout"]

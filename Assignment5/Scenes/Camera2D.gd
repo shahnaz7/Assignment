@@ -15,8 +15,7 @@ func _ready():
 func _process(delta):
 	position += Vector2.DOWN * speed * delta
 	move_rock_spawner()
-	
+		
 func move_rock_spawner():
 	rock_spawner.position.x = character.position.x
 	rock_spawner.position.y = rock_spawner_y_position.global_position.y
-	
