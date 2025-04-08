@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dbv18ih1nuvmo"]
 
-[ext_resource type="Script" path="res://Scripts/FallingRock.gd" id="1_oo0j7"]
+[ext_resource type="Script" uid="uid://c00doxejfunjw" path="res://Scripts/FallingRock.gd" id="1_oo0j7"]
 [ext_resource type="Texture2D" uid="uid://dhbi8si5ms7tm" path="res://Assets/Rock.png" id="2_gga31"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lv3vd"]

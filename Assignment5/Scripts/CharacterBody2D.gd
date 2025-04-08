@@ -58,7 +58,10 @@ func take_damage():
 	
 	if current_health <= 0:
 		print("Player dead")
-		get_tree().change_scene_to_file("res://Scenes/GameOver.tscn")
+		SceneManager.change_scene("res://Scenes/GameOver.tscn", {
+		"speed": 5,
+		"pattern": "scribbles",
+	})
 
 func _on_hit_timer_timeout() -> void:
 	is_invincible = false

@@ -12,8 +12,12 @@ config_version=5
 
 config/name="Assignment5"
 run/main_scene="res://Scenes/main_menu.tscn"
-config/features=PackedStringArray("4.3", "Mobile")
+config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+SceneManager="*res://addons/scene_manager/SceneManager.tscn"
 
 [layer_names]
 
