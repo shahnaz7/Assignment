@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b6idknklacj8v"]
+[gd_scene load_steps=15 format=3 uid="uid://b6idknklacj8v"]
 
 [ext_resource type="Texture2D" uid="uid://beljn1w1haf1q" path="res://Assets/Tile_02.png" id="1_chi5k"]
 [ext_resource type="Texture2D" uid="uid://c2e8rg04pnrhi" path="res://Assets/Free-Mountain-Backgrounds-Pixel-Art9.png" id="2_fa256"]
@@ -16,6 +16,24 @@ size = Vector2(795, 42)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p6a4y"]
 size = Vector2(32, 1996)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w3lg5"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mgtr2"]
+bg_color = Color(1, 0, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
 
 [node name="BoulderDash" type="Node2D"]
 
@@ -148,6 +166,27 @@ theme_override_colors/font_color = Color(0.811765, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 23
 text = "Avoid the falling rocks & survive the longest"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HealthBar" type="ProgressBar" parent="CanvasLayer"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 220.0
+offset_bottom = 50.0
+theme_override_styles/background = SubResource("StyleBoxFlat_w3lg5")
+theme_override_styles/fill = SubResource("StyleBoxFlat_mgtr2")
+max_value = 4.0
+value = 4.0
+show_percentage = false
+
+[node name="Health" type="Label" parent="CanvasLayer/HealthBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [connection signal="body_entered" from="Camera2D/TopBoundry" to="Camera2D/TopBoundry" method="_on_body_entered"]
 [connection signal="timeout" from="RockSpawner/Timer" to="RockSpawner" method="_on_timer_timeout"]

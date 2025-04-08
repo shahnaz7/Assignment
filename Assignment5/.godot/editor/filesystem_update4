@@ -8,3 +8,6 @@ res://Scenes/GameOver.tscn
 res://Scenes/Camera2D.gd
 res://Scripts/top_boundry.gd
 res://Scenes/top_boundry.gd
+res://Scripts/CharacterBody2D.gd
+res://Scripts/health_bar.gd
+res://Scenes/Health.tscn
