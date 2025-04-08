@@ -11,3 +11,4 @@ res://Scenes/top_boundry.gd
 res://Scripts/CharacterBody2D.gd
 res://Scripts/health_bar.gd
 res://Scenes/Health.tscn
+res://Scripts/game_over.gd
