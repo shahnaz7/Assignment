@@ -1,13 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://c2rcxrs12cvs3"]
+[gd_scene load_steps=5 format=3 uid="uid://c2rcxrs12cvs3"]
 
 [ext_resource type="Script" uid="uid://hj536cew4rgs" path="res://Scripts/main_menu.gd" id="1_nxnsl"]
 [ext_resource type="Texture2D" uid="uid://c2e8rg04pnrhi" path="res://Assets/Free-Mountain-Backgrounds-Pixel-Art9.png" id="1_oj02b"]
-[ext_resource type="FontFile" uid="uid://gytgk1mjopxc" path="res://Fonts/rubber-biscuit.bold.ttf" id="2_2yiwn"]
+[ext_resource type="Theme" uid="uid://bnmdr3jitjl66" path="res://Fonts/new_theme.tres" id="3_ce3w2"]
 [ext_resource type="Theme" uid="uid://d213qxnwhb3cj" path="res://Fonts/title_theme.tres" id="3_xls81"]
-
-[sub_resource type="Theme" id="Theme_vcwsy"]
-default_font = ExtResource("2_2yiwn")
-default_font_size = 22
 
 [node name="MainMenu" type="Node2D"]
 script = ExtResource("1_nxnsl")
@@ -34,6 +30,7 @@ offset_right = 20.0
 offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("3_ce3w2")
 theme_override_constants/separation = 26
 
 [node name="GameTitle" type="Label" parent="CanvasLayer/VBoxContainer"]
@@ -48,21 +45,57 @@ text = "Boulder Dash"
 
 [node name="StartGameButton" type="Button" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
-text = "Start Game"
+text = "START_GAME"
 
 [node name="ExitGameButton" type="Button" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
-text = "Exit Game"
+text = "EXIT_GAME"
 
 [node name="HighScoreLabel" type="Label" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
-theme = SubResource("Theme_vcwsy")
+theme = ExtResource("3_ce3w2")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
-text = "Your HighScore: 0m"
+theme_override_font_sizes/font_size = 30
+text = "HIGH_SCORE"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 457.0
+offset_top = 462.0
+offset_right = 689.0
+offset_bottom = 486.0
+theme = ExtResource("3_ce3w2")
+theme_override_font_sizes/font_size = 22
+text = "CURRENT_LANGUAGE"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_top = 0.723
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 486.0
+offset_top = 34.496
+offset_right = -487.0
+offset_bottom = -114.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+theme_override_constants/separation = 55
+
+[node name="English" type="Button" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_ce3w2")
+text = "LANGUAGE_EN"
+
+[node name="French" type="Button" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_ce3w2")
+text = "LANGUAGE_FR "
+
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/StartGameButton" to="." method="_on_start_game_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/ExitGameButton" to="." method="_on_exit_game_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/English" to="." method="_on_english_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/French" to="." method="_on_french_pressed"]

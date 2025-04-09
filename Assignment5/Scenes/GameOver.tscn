@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://0d5y6ymn1ht3"]
+[gd_scene load_steps=5 format=3 uid="uid://0d5y6ymn1ht3"]
 
 [ext_resource type="Script" uid="uid://drm43813fo5fj" path="res://Scripts/game_over.gd" id="1_eqqfr"]
 [ext_resource type="Texture2D" uid="uid://c2e8rg04pnrhi" path="res://Assets/Free-Mountain-Backgrounds-Pixel-Art9.png" id="1_vvoo8"]
 [ext_resource type="Theme" uid="uid://d213qxnwhb3cj" path="res://Fonts/title_theme.tres" id="3_eiqlo"]
+[ext_resource type="Theme" uid="uid://bnmdr3jitjl66" path="res://Fonts/new_theme.tres" id="4_uib17"]
 
 [node name="GameOver" type="Control"]
 layout_mode = 3
@@ -45,28 +46,33 @@ text = "Boulder Dash"
 
 [node name="Label" type="Label" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_uib17")
 text = "Game Over"
 horizontal_alignment = 1
 
 [node name="CurrentScoreLabel" type="Label" parent="CanvasLayer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+theme = ExtResource("4_uib17")
 text = "Game Over"
 horizontal_alignment = 1
 
 [node name="HighScoreLabel" type="Label" parent="CanvasLayer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+theme = ExtResource("4_uib17")
 text = "Game Over"
 horizontal_alignment = 1
 
 [node name="RestartButton" type="Button" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
-text = "Restart"
+theme = ExtResource("4_uib17")
+text = "GAME_RESTART"
 
 [node name="MainMenuButton" type="Button" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
-text = "Main Menu"
+theme = ExtResource("4_uib17")
+text = "MAIN_MENU"
 
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/RestartButton" to="." method="_on_restart_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]

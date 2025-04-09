@@ -12,13 +12,21 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var is_facing_right = true
 
 func _physics_process(delta):
+	# Apply gravity
 	if not is_on_floor():
 		velocity.y += gravity * delta
+	else:
+		velocity.y = 0  # Reset vertical velocity when on floor
 
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+	# Jump
+	if Input.is_action_just_pressed("JUMP"):
+		if is_on_floor():
+			velocity.y = JUMP_VELOCITY
+			print("Jump triggered with velocity: ", velocity.y)
+		else:
+			print("Can't jump - not on floor")
 
-	var direction = Input.get_axis("ui_left", "ui_right")
+	var direction = Input.get_axis("LEFT", "RIGHT")
 	if direction:
 		velocity.x = direction * SPEED
 	else:

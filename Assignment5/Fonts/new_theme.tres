@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bnmdr3jitjl66"]
+
+[ext_resource type="FontFile" uid="uid://gytgk1mjopxc" path="res://Fonts/rubber-biscuit.bold.ttf" id="1_8slnm"]
+
+[resource]
+default_font = ExtResource("1_8slnm")
