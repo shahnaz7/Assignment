@@ -189,11 +189,10 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="DepthLabel" type="Label" parent="CanvasLayer"]
-offset_left = 753.0
-offset_top = 362.0
-offset_right = 896.0
-offset_bottom = 385.0
-text = "Current depth: 0m"
+offset_left = 955.0
+offset_top = 578.0
+offset_right = 1098.0
+offset_bottom = 601.0
 
 [connection signal="body_entered" from="Camera2D/TopBoundry" to="Camera2D/TopBoundry" method="_on_body_entered"]
 [connection signal="timeout" from="RockSpawner/Timer" to="RockSpawner" method="_on_timer_timeout"]

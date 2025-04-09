@@ -57,7 +57,7 @@ func calculate_depth() -> float:
 
 func update_depth_label():
 	if depth_label:
-		depth_label.text = "Deepest Depth: %.1f m" % deepest_depth
+		depth_label.text = "Current depth: %.1f m" % deepest_depth
 	else:
 		print("Error: DepthLabel node not found!")
 
