@@ -1,8 +1,8 @@
+Label
 AnimationPlayer
 CollisionShape2D
 Sprite2D
 Area2D
-Label
 Button
 HBoxContainer
 AudioStreamPlayer2D

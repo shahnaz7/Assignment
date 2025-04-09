@@ -10,7 +10,4 @@ res://Scenes/hard_tile.tscn
 res://Scenes/GameOver.tscn
 res://Scenes/main_character.tscn
 res://Scenes/RockParticles.tscn
-res://Scripts/CharacterBody2D.gd
-res://Scripts/FallingRock.gd
-res://Scripts/hard_tile.gd
 res://Scenes/FloorSpawner.gd
