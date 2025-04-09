@@ -70,7 +70,7 @@ collision_layer = 16
 script = ExtResource("10_11sax")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/TopBoundry"]
-position = Vector2(12.5, -119)
+position = Vector2(11, -150)
 shape = SubResource("RectangleShape2D_3nvnc")
 
 [node name="Walls" type="Node2D" parent="."]

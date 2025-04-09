@@ -39,7 +39,6 @@ func spawn_row():
 			if random_chance > 0.90:  # 10% of gaps get a potion
 				var potion = health_potion_scene.instantiate()
 				potion.global_position = new_tiles[i].global_position
-				potion.z_index = 10
 				hard_tiles_node.add_child(potion)
 				print("Potion spawned at: ", potion.global_position)
 			continue

@@ -11,11 +11,13 @@ func _ready():
 		
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
-	if body.name == "MainCharacter":  # Or check for class
+	if body.name == "MainCharacter":  # Check for player
 		print("Rock hit the player!")
 		body.take_damage()
-		create_particles()
-		queue_free()  # Remove the rock after hit
+	elif body.is_in_group("rock_tiles"):  # Check for HardTile (add group in HardTile)
+		print("Rock hit a tile!") 
+	create_particles()
+	queue_free()
 
 func create_particles():
 	var particles = particle_scene.instantiate()

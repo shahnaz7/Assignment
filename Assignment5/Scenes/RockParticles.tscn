@@ -16,7 +16,10 @@ point_count = 2
 script = SubResource("GDScript_1xnxo")
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+modulate = Color(0.666667, 1, 1, 1)
 emitting = false
+amount = 10
+lifetime = 0.5
 one_shot = true
 explosiveness = 1.0
 direction = Vector2(50, 0)
