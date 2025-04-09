@@ -4,15 +4,10 @@ res://Assets/UI_Localization/PolyglotGamedev - Master.fr.translation
 res://Assets/UI_Localization/PolyglotGamedev - Master.es.translation
 res://Assets/UI_Localization/PolyglotGamedev - Master.BOSNIAN.translation
 res://Scenes/main_menu.tscn
+res://Scenes/RockParticles.tscn
 res://Scenes/boulder_dash.tscn
 res://Scenes/falling_rock.tscn
 res://Scenes/hard_tile.tscn
 res://Scenes/GameOver.tscn
 res://Scenes/main_character.tscn
-res://addons/scene_manager/SceneManager.tscn
-res://Potion.tscn
-res://Scenes/Potion.tscn
-res://Scripts/CharacterBody2D.gd
-res://Scenes/FloorSpawner.gd
-res://Scripts/potion.gd
-res://Scenes/top_boundry.gd
+res://Scripts/FallingRock.gd
