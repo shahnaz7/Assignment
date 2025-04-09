@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://c2rcxrs12cvs3"]
 
-[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_nxnsl"]
+[ext_resource type="Script" uid="uid://hj536cew4rgs" path="res://Scripts/main_menu.gd" id="1_nxnsl"]
 [ext_resource type="Texture2D" uid="uid://c2e8rg04pnrhi" path="res://Assets/Free-Mountain-Backgrounds-Pixel-Art9.png" id="1_oj02b"]
-[ext_resource type="Theme" path="res://Fonts/new_theme.tres" id="3_ce3w2"]
+[ext_resource type="Theme" uid="uid://bnmdr3jitjl66" path="res://Fonts/new_theme.tres" id="3_ce3w2"]
 [ext_resource type="Theme" uid="uid://d213qxnwhb3cj" path="res://Fonts/title_theme.tres" id="3_xls81"]
 
 [node name="MainMenu" type="Node2D"]
