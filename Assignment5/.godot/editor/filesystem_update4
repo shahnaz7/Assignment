@@ -14,3 +14,4 @@ res://Potion.tscn
 res://Scenes/Potion.tscn
 res://Scripts/CharacterBody2D.gd
 res://Scenes/FloorSpawner.gd
+res://Scripts/potion.gd
