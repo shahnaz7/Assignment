@@ -3,4 +3,7 @@ extends Area2D
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "MainCharacter":
-		get_tree().change_scene_to_file("res://Scenes/GameOver.tscn")
+		SceneManager.change_scene("res://Scenes/GameOver.tscn", {
+		"speed": 5,
+		"pattern": "scribbles",
+	})
