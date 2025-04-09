@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtjtdccc60c48"]
+
+[ext_resource type="Texture2D" uid="uid://dmadcub8pih3f" path="res://Assets/ChatGPT Image Apr 9, 2025, 06_03_44 AM (1).png" id="1_drt2p"]
+
+[sub_resource type="GDScript" id="GDScript_drt2p"]
+script/source = "extends Area2D
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.is_in_group(\"player\"):  # Add \"player\" group to your character
+		body.current_health = body.max_health  # Restore full health
+		body.update_health_bar()  # Update the health bar
+		queue_free()  # Remove the potion after pickup
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n5lv6"]
+size = Vector2(10, 17)
+
+[node name="Potion" type="Area2D"]
+script = SubResource("GDScript_drt2p")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_drt2p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_n5lv6")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

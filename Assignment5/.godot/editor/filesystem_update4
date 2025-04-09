@@ -11,3 +11,6 @@ res://Scenes/GameOver.tscn
 res://Scenes/main_character.tscn
 res://addons/scene_manager/SceneManager.tscn
 res://Potion.tscn
+res://Scenes/Potion.tscn
+res://Scripts/CharacterBody2D.gd
+res://Scenes/FloorSpawner.gd
