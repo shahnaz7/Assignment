@@ -10,4 +10,5 @@ res://Scenes/hard_tile.tscn
 res://Scenes/GameOver.tscn
 res://Scenes/main_character.tscn
 res://Scenes/RockParticles.tscn
-res://Scenes/FloorSpawner.gd
+res://Scripts/game_over.gd
+res://Scripts/ScoreManager.gd
