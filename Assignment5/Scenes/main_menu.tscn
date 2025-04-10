@@ -51,16 +51,26 @@ text = "START_GAME"
 layout_mode = 2
 text = "EXIT_GAME"
 
-[node name="HighScoreLabel" type="Label" parent="CanvasLayer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 10
+
+[node name="HighScoreLabel" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 theme = ExtResource("3_ce3w2")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_font_sizes/font_size = 30
-text = "HIGH_SCORE"
+text = "HIGH_SCORE_MAIN"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="ScoreLabel" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_ce3w2")
+text = "SCORE"
 
 [node name="Label" type="Label" parent="CanvasLayer"]
 offset_left = 457.0
