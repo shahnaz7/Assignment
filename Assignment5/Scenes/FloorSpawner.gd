@@ -4,7 +4,7 @@ extends Node2D
 @onready var right_limit = $FloorLimitRight
 @onready var hard_tiles_node = $"../../HardTiles"
 @onready var floor_spawner_location = $"../FloorSpawnerYPosition"
-@onready var depth_label = $"../../CanvasLayer/DepthLabel"
+@onready var depth_label = $"../../CanvasLayer/HBoxContainer/DepthScore"
 
 var player: Node = null
 var floor_tile_scene: PackedScene = preload("res://Scenes/hard_tile.tscn")
@@ -53,11 +53,11 @@ func _process(delta):
 func calculate_depth() -> float:
 	var y_distance = player.global_position.y - initial_y_position
 	var depth_in_meters = (y_distance / tile_size) * METERS_PER_LAYER
-	return max(0.0, depth_in_meters)
+	return max(0, depth_in_meters)
 
 func update_depth_label():
 	if depth_label:
-		depth_label.text = "Current depth: %.1f m" % deepest_depth
+		depth_label.text = "%d m" % int(deepest_depth)
 	else:
 		print("Error: DepthLabel node not found!")
 
