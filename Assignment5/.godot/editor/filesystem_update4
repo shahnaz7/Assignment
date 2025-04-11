@@ -3,12 +3,3 @@ res://Assets/UI_Localization/PolyglotGamedev - Master.en.translation
 res://Assets/UI_Localization/PolyglotGamedev - Master.fr.translation
 res://Assets/UI_Localization/PolyglotGamedev - Master.es.translation
 res://Assets/UI_Localization/PolyglotGamedev - Master.BOSNIAN.translation
-res://addons/scene_manager/SceneManager.tscn
-res://Scenes/boulder_dash.tscn
-res://Scenes/falling_rock.tscn
-res://Scenes/GameOver.tscn
-res://Scenes/hard_tile.tscn
-res://Scenes/main_character.tscn
-res://Scenes/main_menu.tscn
-res://Scenes/Potion.tscn
-res://Scenes/RockParticles.tscn

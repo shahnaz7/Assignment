@@ -6,8 +6,8 @@ extends Control
 func _ready() -> void:
 	print("Loaded current_score:", ScoreManager.current_score)
 	print("Loaded high_score:", ScoreManager.high_score)
-	current_score_label.text = ": %d" %ScoreManager.current_score + "m"
-	high_score_label.text = ": %d" % ScoreManager.high_score + "m"
+	current_score_label.text = "%d" %ScoreManager.current_score + "m"
+	high_score_label.text = "%d" % ScoreManager.high_score + "m"
 
 
 

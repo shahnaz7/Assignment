@@ -8,7 +8,7 @@ extends Node2D
 
 var player: Node = null
 var floor_tile_scene: PackedScene = preload("res://Scenes/hard_tile.tscn")
-var health_potion_scene: PackedScene = preload("res://Scenes/potion.tscn")
+var health_potion_scene: PackedScene = preload("res://Scenes/Potion.tscn")
 var max_tile_quantity = 300
 const tile_size = 32
 const METERS_PER_LAYER = 3.0
@@ -58,7 +58,7 @@ func calculate_depth() -> float:
 
 func update_depth_label():
 	if depth_label:
-		depth_label.text = "%d m" % int(deepest_depth)
+		depth_label.text = "%dm" % int(deepest_depth)
 	else:
 		print("Error: DepthLabel node not found!")
 

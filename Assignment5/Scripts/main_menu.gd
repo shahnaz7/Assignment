@@ -3,7 +3,7 @@ extends Node2D
 @onready var high_score_label = %ScoreLabel
 
 func _ready() -> void:
-	high_score_label.text = ": %d" % ScoreManager.high_score + "m"
+	high_score_label.text = "%d" % ScoreManager.high_score + "m"
 
 
 func _on_start_game_button_pressed():

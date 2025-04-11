@@ -1,0 +1,12 @@
+res://addons/scene_manager/SceneManager.tscn::156d8cf520f28f7c52f31c3501cd64d0::1744382784::res://.godot/exported/133200997/export-01225e9cf36f316e4f3c0735290bb0f1-SceneManager.scn
+res://addons/scene_manager/ShaderFade.tres::8ee117f3d352463b07252839e7f35f1e::1744382646::res://.godot/exported/133200997/export-e950d1c5d0169a4ba5d3cb5e34fb0277-ShaderFade.res
+res://Fonts/new_theme.tres::ad49339154216b2f1f3b99c0389306cb::1744382646::res://.godot/exported/133200997/export-25eeed416e4d70f6ab948793064bb1e0-new_theme.res
+res://Fonts/title_theme.tres::811717c134142193816885d4f4066722::1744382646::res://.godot/exported/133200997/export-64e0cb94c75f3225fa66a3001bf7a148-title_theme.res
+res://Scenes/boulder_dash.tscn::b95f4c326cb8cb88e4af0ded27eea4bb::1744383677::res://.godot/exported/133200997/export-e110321e32a5db48d249e6d5e99c96c6-boulder_dash.scn
+res://Scenes/falling_rock.tscn::e89d527c3ef61b616312f708c5fdb76e::1744383677::res://.godot/exported/133200997/export-ecb084455dcf020b4443c4401d8c83f6-falling_rock.scn
+res://Scenes/GameOver.tscn::da159c475a3b29bdb7bd0726e374f897::1744383678::res://.godot/exported/133200997/export-65c7be664135646c8b1d80384e4ee831-GameOver.scn
+res://Scenes/hard_tile.tscn::26c0378c565c8fc43496048aa8f852b2::1744383677::res://.godot/exported/133200997/export-09a9d9603f64f92538283f8f98520fcc-hard_tile.scn
+res://Scenes/main_character.tscn::39e61d20726e513be2df82e25873413b::1744383678::res://.godot/exported/133200997/export-48539379cb23704926feff6a31c23c83-main_character.scn
+res://Scenes/main_menu.tscn::73062af634cd097b26356a2f0aabe07f::1744384718::res://.godot/exported/133200997/export-502e6a9b269597544b234abf28958cd8-main_menu.scn
+res://Scenes/Potion.tscn::8e69e2175bc81cf3cf3c68f7b140ae49::1744382785::res://.godot/exported/133200997/export-24e99d2ec3e96a3c5e45cbf353cd8f77-Potion.scn
+res://Scenes/RockParticles.tscn::973f8521a44699df4f395ee88b658b1a::1744383678::res://.godot/exported/133200997/export-5d98ccbce834a8daeabb9f7d34a041b4-RockParticles.scn
