@@ -114,9 +114,7 @@ func _on_hit_timer_timeout():
 func update_health_bar():
 	var health_bar = get_node_or_null("../CanvasLayer/HealthBar")
 	if health_bar:
-		health_bar.value = current_health
-		var health_text = health_bar.get_node_or_null("Health")
-		if health_text:
-			health_text.text = "Health: " + str(current_health)
-	else:
-		print("Health bar node not found!")
+		if health_bar.max_value != max_health:
+			health_bar.max_value = max_health
+		var tween = create_tween()
+		tween.tween_property(health_bar, "value", current_health, 0.5).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_SINE)
