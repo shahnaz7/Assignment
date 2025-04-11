@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://b6idknklacj8v"]
+[gd_scene load_steps=18 format=3 uid="uid://b6idknklacj8v"]
 
 [ext_resource type="Texture2D" uid="uid://beljn1w1haf1q" path="res://Assets/Tile_02.png" id="1_chi5k"]
 [ext_resource type="Texture2D" uid="uid://c2e8rg04pnrhi" path="res://Assets/Free-Mountain-Backgrounds-Pixel-Art9.png" id="2_fa256"]
@@ -11,6 +11,7 @@
 [ext_resource type="Script" path="res://Scenes/top_boundry.gd" id="10_11sax"]
 [ext_resource type="Theme" uid="uid://d213qxnwhb3cj" path="res://Fonts/title_theme.tres" id="10_j6osf"]
 [ext_resource type="Theme" uid="uid://bnmdr3jitjl66" path="res://Fonts/new_theme.tres" id="11_7btox"]
+[ext_resource type="FontFile" uid="uid://gytgk1mjopxc" path="res://Fonts/rubber-biscuit.bold.ttf" id="12_pseuh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3nvnc"]
 size = Vector2(795, 42)
@@ -35,6 +36,9 @@ corner_radius_top_left = 8
 corner_radius_top_right = 8
 corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
+
+[sub_resource type="Theme" id="Theme_tdxw0"]
+default_font = ExtResource("12_pseuh")
 
 [node name="BoulderDash" type="Node2D"]
 
@@ -194,6 +198,7 @@ offset_left = 768.0
 offset_top = 551.0
 offset_right = 992.0
 offset_bottom = 591.0
+theme = ExtResource("11_7btox")
 theme_override_constants/separation = 5
 
 [node name="Label" type="Label" parent="CanvasLayer/HBoxContainer"]
@@ -203,6 +208,7 @@ text = "CURRENT_DEPTH"
 
 [node name="DepthScore" type="Label" parent="CanvasLayer/HBoxContainer"]
 layout_mode = 2
+theme = SubResource("Theme_tdxw0")
 
 [connection signal="body_entered" from="Camera2D/TopBoundry" to="Camera2D/TopBoundry" method="_on_body_entered"]
 [connection signal="timeout" from="RockSpawner/Timer" to="RockSpawner" method="_on_timer_timeout"]

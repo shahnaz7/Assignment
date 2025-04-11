@@ -1,20 +1,21 @@
 extends Control
 
-var current_score = 0
-var high_score = 0
+@onready var current_score_label = %DepthLabel
+@onready var high_score_label = %ScoreLabel
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	%DepthLabel.text =   str(current_score) + "m"
-	%ScoreLabel.text =   str(high_score) + "m"
+	print("Loaded current_score:", ScoreManager.current_score)
+	print("Loaded high_score:", ScoreManager.high_score)
+	current_score_label.text = ": %d" %ScoreManager.current_score + "m"
+	high_score_label.text = ": %d" % ScoreManager.high_score + "m"
+
+
 
 func _on_restart_button_pressed() -> void:
 	SceneManager.change_scene("res://Scenes/boulder_dash.tscn", {
 		"speed": 5,
 		"pattern": "scribbles",
 	})
-
-
 
 func _on_main_menu_button_pressed() -> void:
 	SceneManager.change_scene("res://Scenes/main_menu.tscn", {

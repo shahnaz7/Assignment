@@ -19,6 +19,7 @@ var deepest_depth: float = 0.0
 var is_initial_position_set: bool = false
 
 func _ready():
+	add_to_group("spawner")
 	# Spawn initial rows and set initial_y_position based on the first row
 	spawn_row()
 	initial_y_position = spawn_next_location - tile_size  # First row's y position
@@ -93,3 +94,6 @@ func spawn_row():
 	
 	# Set the next spawn location based on this node's global_position.y (as in the provided script)
 	spawn_next_location = global_position.y + tile_size
+
+func get_deepest_depth() -> int:
+	return int(deepest_depth)

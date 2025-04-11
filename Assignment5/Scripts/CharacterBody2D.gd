@@ -1,8 +1,9 @@
 extends CharacterBody2D
 
 @onready var animated_sprite = $AnimatedSprite2D
-@onready var hit_sound = $HitSound  # Ensure this is an AudioStreamPlayer node
-@onready var hit_timer = $HitTimer  # Ensure this is a Timer node
+@onready var hit_sound = $HitSound
+@onready var hit_timer = $HitTimer
+
 @export var max_health: int = 4
 var current_health: int = max_health
 var is_invincible: bool = false
@@ -14,21 +15,22 @@ const JUMP_VELOCITY = -400.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var is_facing_right: bool = true
 
+# Score tracking
+
+
 func _ready():
 	add_to_group("player")
 	current_health = max_health
-	hit_sound.stream = preload("res://Assets/Audio/mixkit-negative-guitar-tone-2324.wav")  # Load the sound
-	hit_timer.wait_time = 0.2  # Flash interval (adjust for desired speed)
-	hit_timer.one_shot = false  # Allow repeated timeouts for flashing
+	hit_sound.stream = preload("res://Assets/Audio/mixkit-negative-guitar-tone-2324.wav")
+	hit_timer.wait_time = 0.2
+	hit_timer.one_shot = false
 
 func _physics_process(delta):
-	# Apply gravity
 	if not is_on_floor():
 		velocity.y += gravity * delta
 	else:
 		velocity.y = 0
 
-	# Jump
 	if Input.is_action_just_pressed("JUMP") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 		print("Jump triggered with velocity: ", velocity.y)
@@ -42,6 +44,7 @@ func _physics_process(delta):
 	move_and_slide()
 
 func _process(delta):
+		
 	if is_invincible:
 		invincibility_time -= delta
 		if invincibility_time <= 0:
@@ -68,17 +71,31 @@ func flip():
 func take_damage():
 	if is_invincible:
 		return
-	
-	# Start invincibility
+
 	is_invincible = true
-	invincibility_time = 3.0  # Reset to 3 seconds
+	invincibility_time = 3.0
 	current_health -= 1
-	hit_sound.play()  # Play negative-guitar-tone
-	hit_timer.start()  # Start flashing
+	hit_sound.play()
+	hit_timer.start()
 	update_health_bar()
 
 	if current_health <= 0:
 		print("Player dead")
+
+		# Get the spawner node and ask it for the depth
+		var spawner = get_tree().get_first_node_in_group("spawner")
+		if spawner and spawner.has_method("get_deepest_depth"):
+			var final_depth = spawner.get_deepest_depth()
+			print("Final depth from spawner:", final_depth)
+
+			ScoreManager.current_score = final_depth
+
+			if final_depth > ScoreManager.high_score:
+				ScoreManager.high_score = final_depth
+				ScoreManager.save_high_score(final_depth)
+		else:
+			print("Spawner not found or doesn't have get_deepest_depth()!")
+
 		SceneManager.change_scene("res://Scenes/GameOver.tscn", {
 			"speed": 5,
 			"pattern": "scribbles",
@@ -87,7 +104,7 @@ func take_damage():
 func end_invincibility():
 	is_invincible = false
 	hit_timer.stop()
-	animated_sprite.modulate = Color(1, 1, 1)  # Reset to normal color
+	animated_sprite.modulate = Color(1, 1, 1)
 	flash_toggle = false
 
 func _on_hit_timer_timeout():

@@ -1,81 +1,83 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1744297140
-icon.svg::CompressedTexture2D::9062991244066029639::1744197113::1744297140::1::::<><>::
-::res://addons/::1744197231
-::res://addons/scene_manager/::1744297141
-Dissolve2d.gdshader::Shader::-1::1744197113::0::1::::<><>::
-icon.png::CompressedTexture2D::4681674247265322881::1744197113::1744297141::1::::<><>::
-NodeFlagsInspectorPlugin.gd::GDScript::-1::1744197113::0::1::::<>EditorInspectorPlugin<>::
-plugin.cfg::TextFile::-1::1744197113::0::1::::<><>::
-SceneManager.gd::GDScript::-1::1744197113::0::1::::<>Node2D<>::
-SceneManager.tscn::PackedScene::688994745176072094::1744200403::0::1::::<><>::uid://cnon0w8udiip::::res://addons/scene_manager/SceneManager.gd<>uid://dasea85ie6bpg::::res://addons/scene_manager/Dissolve2d.gdshader<>uid://dxr1r78uxitcq::::res://addons/scene_manager/ShaderFade.tres
-SceneManagerConstants.gd::GDScript::-1::1744197113::0::1::::SceneManagerConstants<>Object<>::
-SceneManagerPlugin.gd::GDScript::-1::1744197113::0::1::::<>EditorPlugin<>::
-ShaderFade.tres::Animation::8810310609546906512::1744197113::0::1::::<><>::
-SingletonCheckProperty.gd::GDScript::-1::1744197113::0::1::::<>EditorProperty<>::
-SingletonNameProperty.gd::GDScript::-1::1744197113::0::1::::<>EditorProperty<>::
-::res://addons/scene_manager/shader_patterns/::1744297141
-circle.png::CompressedTexture2D::3477021516728882293::1744197113::1744297141::1::::<><>::
-curtains.png::CompressedTexture2D::925523638132077560::1744197113::1744297141::1::::<><>::
-diagonal.png::CompressedTexture2D::5219063197321521451::1744197113::1744297141::1::::<><>::
-horizontal.png::CompressedTexture2D::2296514068380256297::1744197113::1744297141::1::::<><>::
-radial.png::CompressedTexture2D::8229525683377610162::1744197113::1744297141::1::::<><>::
-scribbles.png::CompressedTexture2D::2812175283927716421::1744197113::1744297141::1::::<><>::
-squares.png::CompressedTexture2D::4484147373352580222::1744197113::1744297141::1::::<><>::
-vertical.png::CompressedTexture2D::6321667921096867211::1744197113::1744297141::1::::<><>::
-::res://Assets/::1744297141
-ChatGPT Image Apr 9, 2025, 06_03_44 AM (1).png::CompressedTexture2D::8001714950833345769::1744197638::1744297140::1::::<><>::
-Free-Mountain-Backgrounds-Pixel-Art9.png::CompressedTexture2D::6678232030985406578::1744197113::1744297141::1::::<><>::
-Rock.png::CompressedTexture2D::7653193960599164706::1744197113::1744297140::1::::<><>::
-Tileset.png::CompressedTexture2D::6237034999129619636::1744197113::1744297140::1::::<><>::
-Tile_02.png::CompressedTexture2D::2690455282579032904::1744197113::1744297140::1::::<><>::
-Tile_14.png::CompressedTexture2D::768795994632753634::1744197113::1744297140::1::::<><>::
-Tile_30.png::CompressedTexture2D::4331545994334807856::1744197113::1744297140::1::::<><>::
-::res://Assets/Audio/::1744297141
-mixkit-negative-guitar-tone-2324.wav::AudioStreamWAV::2482046713742064889::1744197113::1744297141::1::::<><>::
-::res://Assets/Character/::1744297141
-Attack_1.png::CompressedTexture2D::2573539368678643285::1744197113::1744297141::1::::<><>::
-Attack_2.png::CompressedTexture2D::2908732130844512266::1744197113::1744297141::1::::<><>::
-Attack_3.png::CompressedTexture2D::2049196575041478682::1744197113::1744297141::1::::<><>::
-Dead.png::CompressedTexture2D::4459114832643078056::1744197113::1744297141::1::::<><>::
-Hurt.png::CompressedTexture2D::538171792352134818::1744197113::1744297141::1::::<><>::
-Idle.png::CompressedTexture2D::1437941428579379615::1744197113::1744297141::1::::<><>::
-Jump.png::CompressedTexture2D::3487312703941709330::1744197113::1744297141::1::::<><>::
-Run.png::CompressedTexture2D::1423191762306070473::1744197113::1744297141::1::::<><>::
-Walk.png::CompressedTexture2D::9080637441851395923::1744197113::1744297141::1::::<><>::
-::res://Assets/UI/::1744297141
-f22288ce-a39a-40b9-858d-2978557ebfff.png::CompressedTexture2D::3953789909031743289::1744197113::1744297141::1::::<><>::
-::res://Assets/UI_Localization/::1744297871
-PolyglotGamedev - Master.BOSNIAN.translation::OptimizedTranslation::2386237197934335730::1744297872::0::1::::<><>::
-PolyglotGamedev - Master.csv::Translation::3610954778157532826::1744297090::1744297872::1::::<><>::
-PolyglotGamedev - Master.DESCRIPTION.translation::OptimizedTranslation::6477487437965067997::1744297872::0::1::::<><>::
-PolyglotGamedev - Master.en.translation::OptimizedTranslation::3993983972704733245::1744297872::0::1::::<><>::
-PolyglotGamedev - Master.ENGLISH.translation::OptimizedTranslation::2889316982887318134::1744197113::0::1::::<><>::
-PolyglotGamedev - Master.es.translation::OptimizedTranslation::5575179218787101561::1744297872::0::1::::<><>::
-PolyglotGamedev - Master.fr.translation::OptimizedTranslation::4893087504118880726::1744297872::0::1::::<><>::
-::res://Fonts/::1744297809
-new_theme.tres::Theme::3323862178457207073::1744197113::0::1::::<><>::uid://gytgk1mjopxc::::res://Fonts/rubber-biscuit.bold.ttf
-rubber-biscuit.bold.ttf::FontFile::471843031507857868::1744197113::1744297140::1::::<><>::
-settingsManager.gd::GDScript::-1::1744297809::0::1::::<>Node<>::
-title_theme.tres::Theme::9109764528540187189::1744197113::0::1::::<><>::uid://gytgk1mjopxc::::res://Fonts/rubber-biscuit.bold.ttf
-::res://Scenes/::1744297715
-boulder_dash.tscn::PackedScene::4578990566173407371::1744297714::0::1::::<><>::uid://beljn1w1haf1q::::res://Assets/Tile_02.png<>uid://c2e8rg04pnrhi::::res://Assets/Free-Mountain-Backgrounds-Pixel-Art9.png<>uid://qijcjx6cmcoi::::res://Scenes/main_character.tscn<>res://Scripts/RockSpawner.gd<>uid://b2yh6uyeyv3ma::::res://Assets/Tile_30.png<>res://Scenes/Camera2D.gd<>uid://k7n7td2fclyg::::res://Assets/Tile_14.png<>res://Scenes/FloorSpawner.gd<>res://Scenes/top_boundry.gd<>uid://d213qxnwhb3cj::::res://Fonts/title_theme.tres<>uid://bnmdr3jitjl66::::res://Fonts/new_theme.tres
-Camera2D.gd::GDScript::-1::1744197113::0::1::::<>Camera2D<>::
-falling_rock.tscn::PackedScene::7274440832763316714::1744297715::0::1::::<><>::res://Scripts/FallingRock.gd<>uid://dhbi8si5ms7tm::::res://Assets/Rock.png
-FloorSpawner.gd::GDScript::-1::1744296380::0::1::::<>Node2D<>::
-GameOver.tscn::PackedScene::1762780258912488926::1744297715::0::1::::<><>::res://Scripts/game_over.gd<>uid://c2e8rg04pnrhi::::res://Assets/Free-Mountain-Backgrounds-Pixel-Art9.png<>uid://d213qxnwhb3cj::::res://Fonts/title_theme.tres<>uid://bnmdr3jitjl66::::res://Fonts/new_theme.tres
-hard_tile.tscn::PackedScene::5230311385365882974::1744297715::0::1::::<><>::res://Scripts/hard_tile.gd<>uid://b2yh6uyeyv3ma::::res://Assets/Tile_30.png
-main_character.tscn::PackedScene::1140087054416002444::1744297715::0::1::::<><>::res://Scripts/CharacterBody2D.gd<>uid://uqsxke1wsq6r::::res://Assets/Character/Idle.png<>uid://bpxjsbr4ff1rq::::res://Assets/Character/Jump.png<>uid://ujn04ashyhyn::::res://Assets/Character/Run.png<>uid://bbmk7go21sst2::::res://Assets/Audio/mixkit-negative-guitar-tone-2324.wav
-main_menu.tscn::PackedScene::6703197996598375764::1744297714::0::1::::<><>::res://Scripts/main_menu.gd<>uid://c2e8rg04pnrhi::::res://Assets/Free-Mountain-Backgrounds-Pixel-Art9.png<>uid://bnmdr3jitjl66::::res://Fonts/new_theme.tres<>uid://d213qxnwhb3cj::::res://Fonts/title_theme.tres
-Potion.tscn::PackedScene::8512588568502326267::1744290411::0::1::::<><>::uid://dmadcub8pih3f::::res://Assets/ChatGPT Image Apr 9, 2025, 06_03_44 AM (1).png<>uid://1wsj6kdcwjkc::::res://Scripts/potion.gd
-RockParticles.tscn::PackedScene::5152811127633599563::1744297715::0::1::::<><>::
-top_boundry.gd::GDScript::-1::1744200402::0::1::::<>Area2D<>::
-::res://Scripts/::1744297870
-CharacterBody2D.gd::GDScript::-1::1744290411::0::1::::<>CharacterBody2D<>::
-FallingRock.gd::GDScript::-1::1744225496::0::1::::<>RigidBody2D<>::
-game_over.gd::GDScript::-1::1744295649::0::1::::<>Control<>::
-hard_tile.gd::GDScript::-1::1744225496::0::1::::<>StaticBody2D<>::
-main_menu.gd::GDScript::-1::1744197113::0::1::::<>Node2D<>::
-potion.gd::GDScript::-1::1744199151::0::1::::<>Area2D<>::
-RockSpawner.gd::GDScript::-1::1744197113::0::1::::<>Node2D<>::
-settingsManager.gd::GDScript::-1::1744297870::0::1::::<>Node<>::
+::res://::1744375482
+icon.svg::CompressedTexture2D::9062991244066029639::1744294264::1744308358::1::::<><>::
+::res://addons/::1744294264
+::res://addons/scene_manager/::1744308358
+Dissolve2d.gdshader::Shader::-1::1744294264::0::1::::<><>::
+icon.png::CompressedTexture2D::4681674247265322881::1744294264::1744308358::1::::<><>::
+NodeFlagsInspectorPlugin.gd::GDScript::-1::1744294264::0::1::::<>EditorInspectorPlugin<>::
+plugin.cfg::TextFile::-1::1744294264::0::1::::<><>::
+SceneManager.gd::GDScript::-1::1744294264::0::1::::<>Node2D<>::
+SceneManager.tscn::PackedScene::688994745176072094::1744294264::0::1::::<><>::uid://cnon0w8udiip::::res://addons/scene_manager/SceneManager.gd<>uid://dasea85ie6bpg::::res://addons/scene_manager/Dissolve2d.gdshader<>uid://dxr1r78uxitcq::::res://addons/scene_manager/ShaderFade.tres
+SceneManagerConstants.gd::GDScript::-1::1744294264::0::1::::SceneManagerConstants<>Object<>::
+SceneManagerPlugin.gd::GDScript::-1::1744294264::0::1::::<>EditorPlugin<>::
+ShaderFade.tres::Animation::8810310609546906512::1744294264::0::1::::<><>::
+SingletonCheckProperty.gd::GDScript::-1::1744294264::0::1::::<>EditorProperty<>::
+SingletonNameProperty.gd::GDScript::-1::1744294264::0::1::::<>EditorProperty<>::
+::res://addons/scene_manager/shader_patterns/::1744308358
+circle.png::CompressedTexture2D::3477021516728882293::1744294264::1744308358::1::::<><>::
+curtains.png::CompressedTexture2D::925523638132077560::1744294264::1744308358::1::::<><>::
+diagonal.png::CompressedTexture2D::5219063197321521451::1744294264::1744308358::1::::<><>::
+horizontal.png::CompressedTexture2D::2296514068380256297::1744294264::1744308358::1::::<><>::
+radial.png::CompressedTexture2D::8229525683377610162::1744294264::1744308358::1::::<><>::
+scribbles.png::CompressedTexture2D::2812175283927716421::1744294264::1744308358::1::::<><>::
+squares.png::CompressedTexture2D::4484147373352580222::1744294264::1744308358::1::::<><>::
+vertical.png::CompressedTexture2D::6321667921096867211::1744294264::1744308358::1::::<><>::
+::res://Assets/::1744308358
+ChatGPT Image Apr 9, 2025, 06_03_44 AM (1).png::CompressedTexture2D::8001714950833345769::1744294264::1744308358::1::::<><>::
+Free-Mountain-Backgrounds-Pixel-Art9.png::CompressedTexture2D::6678232030985406578::1744294264::1744308358::1::::<><>::
+Rock.png::CompressedTexture2D::7653193960599164706::1744294264::1744308358::1::::<><>::
+Tileset.png::CompressedTexture2D::6237034999129619636::1744294264::1744308358::1::::<><>::
+Tile_02.png::CompressedTexture2D::2690455282579032904::1744294264::1744308358::1::::<><>::
+Tile_14.png::CompressedTexture2D::768795994632753634::1744294264::1744308358::1::::<><>::
+Tile_30.png::CompressedTexture2D::4331545994334807856::1744294264::1744308358::1::::<><>::
+::res://Assets/Audio/::1744308359
+mixkit-negative-guitar-tone-2324.wav::AudioStreamWAV::2482046713742064889::1744294264::1744308359::1::::<><>::
+::res://Assets/Character/::1744308358
+Attack_1.png::CompressedTexture2D::2573539368678643285::1744294264::1744308358::1::::<><>::
+Attack_2.png::CompressedTexture2D::2908732130844512266::1744294264::1744308358::1::::<><>::
+Attack_3.png::CompressedTexture2D::2049196575041478682::1744294264::1744308358::1::::<><>::
+Dead.png::CompressedTexture2D::4459114832643078056::1744294264::1744308358::1::::<><>::
+Hurt.png::CompressedTexture2D::538171792352134818::1744294264::1744308358::1::::<><>::
+Idle.png::CompressedTexture2D::1437941428579379615::1744294264::1744308358::1::::<><>::
+Jump.png::CompressedTexture2D::3487312703941709330::1744294264::1744308358::1::::<><>::
+Run.png::CompressedTexture2D::1423191762306070473::1744294264::1744308358::1::::<><>::
+Walk.png::CompressedTexture2D::9080637441851395923::1744294264::1744308358::1::::<><>::
+::res://Assets/UI/::1744308359
+f22288ce-a39a-40b9-858d-2978557ebfff.png::CompressedTexture2D::3953789909031743289::1744294264::1744308359::1::::<><>::
+::res://Assets/UI_Localization/::1744378039
+PolyglotGamedev - Master.BOSNIAN.translation::OptimizedTranslation::2386237197934335730::1744378235::0::1::::<><>::
+PolyglotGamedev - Master.csv::Translation::3610954778157532826::1744308341::1744378235::1::::<><>::
+PolyglotGamedev - Master.DESCRIPTION.translation::OptimizedTranslation::6477487437965067997::1744378235::0::1::::<><>::
+PolyglotGamedev - Master.en.translation::OptimizedTranslation::3993983972704733245::1744378235::0::1::::<><>::
+PolyglotGamedev - Master.ENGLISH.translation::OptimizedTranslation::2889316982887318134::1744294264::0::1::::<><>::
+PolyglotGamedev - Master.es.translation::OptimizedTranslation::5575179218787101561::1744378235::0::1::::<><>::
+PolyglotGamedev - Master.fr.translation::OptimizedTranslation::4893087504118880726::1744378235::0::1::::<><>::
+::res://Fonts/::1744308358
+new_theme.tres::Theme::3323862178457207073::1744294264::0::1::::<><>::uid://gytgk1mjopxc::::res://Fonts/rubber-biscuit.bold.ttf
+rubber-biscuit.bold.ttf::FontFile::471843031507857868::1744294264::1744308358::1::::<><>::
+settingsManager.gd::GDScript::-1::1744308341::0::1::::<>Node<>::
+title_theme.tres::Theme::9109764528540187189::1744294264::0::1::::<><>::uid://gytgk1mjopxc::::res://Fonts/rubber-biscuit.bold.ttf
+::res://Scenes/::1744378231
+boulder_dash.tscn::PackedScene::4578990566173407371::1744378231::0::1::::<><>::uid://beljn1w1haf1q::::res://Assets/Tile_02.png<>uid://c2e8rg04pnrhi::::res://Assets/Free-Mountain-Backgrounds-Pixel-Art9.png<>uid://qijcjx6cmcoi::::res://Scenes/main_character.tscn<>res://Scripts/RockSpawner.gd<>uid://b2yh6uyeyv3ma::::res://Assets/Tile_30.png<>res://Scenes/Camera2D.gd<>uid://k7n7td2fclyg::::res://Assets/Tile_14.png<>res://Scenes/FloorSpawner.gd<>res://Scenes/top_boundry.gd<>uid://d213qxnwhb3cj::::res://Fonts/title_theme.tres<>uid://bnmdr3jitjl66::::res://Fonts/new_theme.tres<>uid://gytgk1mjopxc::::res://Fonts/rubber-biscuit.bold.ttf
+Camera2D.gd::GDScript::-1::1744294264::0::1::::<>Camera2D<>::
+falling_rock.tscn::PackedScene::7274440832763316714::1744378231::0::1::::<><>::res://Scripts/FallingRock.gd<>uid://dhbi8si5ms7tm::::res://Assets/Rock.png
+FloorSpawner.gd::GDScript::-1::1744377328::0::1::::<>Node2D<>::
+GameOver.tscn::PackedScene::1762780258912488926::1744378231::0::1::::<><>::res://Scripts/game_over.gd<>uid://c2e8rg04pnrhi::::res://Assets/Free-Mountain-Backgrounds-Pixel-Art9.png<>uid://d213qxnwhb3cj::::res://Fonts/title_theme.tres<>uid://bnmdr3jitjl66::::res://Fonts/new_theme.tres<>uid://gytgk1mjopxc::::res://Fonts/rubber-biscuit.bold.ttf
+hard_tile.tscn::PackedScene::5230311385365882974::1744378231::0::1::::<><>::res://Scripts/hard_tile.gd<>uid://b2yh6uyeyv3ma::::res://Assets/Tile_30.png
+main_character.tscn::PackedScene::1140087054416002444::1744378231::0::1::::<><>::res://Scripts/CharacterBody2D.gd<>uid://uqsxke1wsq6r::::res://Assets/Character/Idle.png<>uid://bpxjsbr4ff1rq::::res://Assets/Character/Jump.png<>uid://ujn04ashyhyn::::res://Assets/Character/Run.png<>uid://bbmk7go21sst2::::res://Assets/Audio/mixkit-negative-guitar-tone-2324.wav
+main_menu.tscn::PackedScene::6703197996598375764::1744378231::0::1::::<><>::res://Scripts/main_menu.gd<>uid://c2e8rg04pnrhi::::res://Assets/Free-Mountain-Backgrounds-Pixel-Art9.png<>uid://bnmdr3jitjl66::::res://Fonts/new_theme.tres<>uid://d213qxnwhb3cj::::res://Fonts/title_theme.tres
+Potion.tscn::PackedScene::8512588568502326267::1744294264::0::1::::<><>::uid://dmadcub8pih3f::::res://Assets/ChatGPT Image Apr 9, 2025, 06_03_44 AM (1).png<>uid://1wsj6kdcwjkc::::res://Scripts/potion.gd
+RockParticles.tscn::PackedScene::5152811127633599563::1744378231::0::1::::<><>::
+top_boundry.gd::GDScript::-1::1744294264::0::1::::<>Area2D<>::
+::res://Scripts/::1744377800
+CharacterBody2D.gd::GDScript::-1::1744376308::0::1::::<>CharacterBody2D<>::
+FallingRock.gd::GDScript::-1::1744294264::0::1::::<>RigidBody2D<>::
+GameSession.gd::GDScript::-1::1744330266::0::1::::<>Node<>::
+game_over.gd::GDScript::-1::1744377513::0::1::::<>Control<>::
+hard_tile.gd::GDScript::-1::1744294264::0::1::::<>StaticBody2D<>::
+main_menu.gd::GDScript::-1::1744377800::0::1::::<>Node2D<>::
+potion.gd::GDScript::-1::1744294264::0::1::::<>Area2D<>::
+RockSpawner.gd::GDScript::-1::1744294264::0::1::::<>Node2D<>::
+ScoreManager.gd::GDScript::-1::1744331610::0::1::::<>Node<>::
+settingsManager.gd::GDScript::-1::1744308341::0::1::::<>Node<>::

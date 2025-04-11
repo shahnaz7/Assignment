@@ -1,9 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://0d5y6ymn1ht3"]
+[gd_scene load_steps=8 format=3 uid="uid://0d5y6ymn1ht3"]
 
 [ext_resource type="Script" path="res://Scripts/game_over.gd" id="1_eqqfr"]
 [ext_resource type="Texture2D" uid="uid://c2e8rg04pnrhi" path="res://Assets/Free-Mountain-Backgrounds-Pixel-Art9.png" id="1_vvoo8"]
 [ext_resource type="Theme" uid="uid://d213qxnwhb3cj" path="res://Fonts/title_theme.tres" id="3_eiqlo"]
 [ext_resource type="Theme" uid="uid://bnmdr3jitjl66" path="res://Fonts/new_theme.tres" id="4_uib17"]
+[ext_resource type="FontFile" uid="uid://gytgk1mjopxc" path="res://Fonts/rubber-biscuit.bold.ttf" id="5_o1t8f"]
+
+[sub_resource type="Theme" id="Theme_nsa63"]
+default_font = ExtResource("5_o1t8f")
+
+[sub_resource type="Theme" id="Theme_8qrdv"]
+default_font = ExtResource("5_o1t8f")
 
 [node name="GameOver" type="Control"]
 layout_mode = 3
@@ -52,6 +59,7 @@ horizontal_alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_uib17")
 theme_override_constants/separation = 5
 alignment = 1
 
@@ -65,9 +73,11 @@ horizontal_alignment = 1
 unique_name_in_owner = true
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
+theme = SubResource("Theme_nsa63")
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_uib17")
 theme_override_constants/separation = 5
 alignment = 1
 
@@ -81,6 +91,7 @@ horizontal_alignment = 1
 unique_name_in_owner = true
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
+theme = SubResource("Theme_8qrdv")
 
 [node name="RestartButton" type="Button" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
