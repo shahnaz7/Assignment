@@ -76,23 +76,20 @@ func spawn_row():
 	
 	for i in range(len(new_tiles)):
 		# Check for skipping a tile (20% chance to create a gap)
-		if randf() > 0.80:
+		if randf() > 0.60:
 			# In the empty gap, spawn a potion with a 10% chance
-			if randf() > 0.90:  # 10% chance to spawn a potion in the empty space
+			if randf() > 0.90:  
 				var potion = health_potion_scene.instantiate()
 				potion.global_position = new_tiles[i].global_position
-				# Optional: Adjust potion position slightly above the tile level
-				potion.global_position.y -= 10  # Move potion 10 pixels above
-				# Optional: Ensure potion renders above other elements
-				potion.z_index = 1  # Ensure potion is above tiles (which are likely at z_index 0)
+				potion.global_position.y -= 8
 				hard_tiles_node.add_child(potion)
 				print("Potion spawned at: ", potion.global_position)
 			continue  # Skip adding the tile to create the gap
 		
-		# Add the tile if not skipped
+		
 		hard_tiles_node.add_child(new_tiles[i])
 	
-	# Set the next spawn location based on this node's global_position.y (as in the provided script)
+	
 	spawn_next_location = global_position.y + tile_size
 
 func get_deepest_depth() -> int:
